@@ -15,31 +15,32 @@
        <div class="row"> 
        <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">General</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Travel</a>
-  </li>
-  <li class "nav-item">
-    <a class="nav-link" href="#">Food</a>
-  </li>
-  <li class "nav-item">
-    <a class="nav-link" href="#">Electronic Usage</a>
-  </li>
-  <li class "nav-item">
-    <a class="nav-link" href="#">Shopping</a>
-  </li>
-</ul>
-     </div>
+         <a class="nav-link active" aria-current="page" href="#tab1" data-bs-toggle = "tab" data-bs-target = "#tab1">General</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="#tab2" data-bs-toggle = "tab" data-bs-target = "#tab2">Home</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="#tab3" data-bs-toggle = "tab" data-bs-target = "#tab3">Travel</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="#tab4" data-bs-toggle = "tab" data-bs-target = "#tab4">Food</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="#tab5" data-bs-toggle = "tab" data-bs-target = "#tab5">Electronic usage</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="#tab6" data-bs-toggle = "tab" data-bs-target = "#tab6">Shopping</a>
+    </li>
+    </ul>
+</div>
        <div class="row my-2 justify-content-center">
    <div class="col-md-6">
        <div class="card">
             <div class="card-header"> Featured </div>
-            <div class="card-body">
-                <div>
+            <div class="card-body tab-content">
+               
+          <div id="tab1" class="tab-pane fade show active"><!-- code for the General category form -->
                    <form>
   <div class="row mb-3">
     <label for="name" class="sm:col-6 col-form-label">Name</label>
@@ -70,7 +71,7 @@
       </div>
     </form>
   </div>
-        <div>
+      <div id="tab2" class="tab-pane fade"><!-- code for the Home category form -->   
            <form>
   <div class="row mb-3">
     <label for="energyTypeDropDown" class="sm:col-6 col-form-label">What type of energy is mainly used in your home?</label>
@@ -98,7 +99,7 @@
   </div>
 </form>
                 </div>
- <div>
+<div id="tab3" class="tab-pane fade"><!-- code for the Travel category form -->
     <form>
      <div class="row mb-3">
        <label for="travelTypeDropDown" class="col-sm-6 col-form-label">How do you commute to school or work?</label>
@@ -119,7 +120,7 @@
    </div>
 </form>
             </div>
-               <div>
+<div id="tab4" class="tab-pane fade"><!-- code for the Food category form --> 
                   <form>
 <div class="row mb-3">
          <label for="dietDropDown" class="col-sm-6 col-form-label">What kind of diet do you follow?</label>
@@ -143,7 +144,7 @@
     </div>
   </div>     
                   </form>
-                  <div>
+               <div id="tab5" class="tab-pane fade"><!-- code for the Electronic usage category form --> 
                       <div class="row mb-3">
          <label class="col-sm-6 col-form-label"> Which electronic devices do you use daily? </label>
          <div class="col-sm-6">
@@ -213,6 +214,38 @@
     </div>
   </form>
  </d iv>
+</div>
+       <div id="tab6" class="tab-pane fade"><!-- code for the Shopping category form --> 
+                      <form>
+      <div class="row mb-3">
+         <label for="clothesFrequency" class="col-sm-6 col-form-label">How often do you buy new clothes?</label>
+         <div class="col-sm-6">
+            <select class="form-select" aria-label="Default select example" id = "clothesFrequency">
+              <option value="Rarely">Rarely</option>
+              <option value="Every few months">Every few months</option>
+              <option value="Monthly">Monthly</option>
+              <option value="More than once a month">More than once a month</option>
+            </select>
+         </div>
+      </div>
+      <div class="row mb-3">
+    <label class="col-sm-6 col-form-label">Do you recycle?</label>
+    <div class="col-sm-6">
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Always">
+          <label class="form-check-label" for="inlineRadio1"> Always </label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Sometimes">
+          <label class="form-check-label" for="inlineRadio2"> Sometimes </label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Never">
+          <label class="form-check-label" for="inlineRadio3">Never</label>
+         </div>
+      </div>
+    </form>
+  </div>
 </div>
             </div>
             <div class="card-footer text-muted"> 2 days ago </div>                
